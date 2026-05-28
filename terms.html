@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Sprachly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #09090e;
+            --surface: rgba(18, 18, 29, 0.7);
+            --text: #f4f4f5;
+            --muted: #a1a1aa;
+            --accent: #8b5cf6;
+            --accent-glow: rgba(139, 92, 246, 0.15);
+            --border: rgba(255, 255, 255, 0.08);
+            --primary: #6366f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.75rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-link {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--text);
+        }
+
+        /* Headings */
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ffffff 30%, var(--muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        /* Paragraphs & Lists */
+        p, li {
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        ol, ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--surface);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card p {
+            margin-bottom: 0;
+            color: var(--text);
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer.site-footer {
+            margin-top: 6rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer.site-footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 2.25rem;
+            }
+            header {
+                margin-bottom: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Sprachly</a>
+            <a href="/" class="nav-link">&larr; Back to home</a>
+        </header>
+
+        <main>
+            <h1>Terms of Service</h1>
+            <p class="subtitle">Effective Date: May 28, 2026 · Last updated: May 2026</p>
+
+            <div class="card">
+                <p>By downloading, installing, or using the Sprachly mobile application or accessing our website at <strong>sprachly.kushan.codes</strong>, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+            </div>
+
+            <h2>1. User Accounts & Registration</h2>
+            <p>You can use Sprachly in a local-only offline mode without creating an account. However, to access synchronization features, you must register a secure account using your email. You are responsible for safeguarding your login credentials.</p>
+            <p>We reserve the right to suspend or terminate accounts that violate our terms, generate artificial API traffic, or disrupt our servers.</p>
+
+            <h2>2. Subscriptions & Billing Transparency</h2>
+            <p>Sprachly offers premium subscriptions (Monthly, Yearly, and Lifetime memberships) processed securely via **Google Play Billing** and **Apple App Store Billing** (managed through RevenueCat).</p>
+            
+            <div class="card" style="border-left: 4px solid var(--primary);">
+                <p><strong>🚨 Managing Your Subscription:</strong></p>
+                <ul style="margin-top: 1rem; margin-bottom: 0;">
+                    <li><strong>Free Trials:</strong> If your subscription includes a free trial (e.g. 3-Day Free Trial for the Yearly Plan), your Google Play or App Store account will be charged at the end of the trial period unless you cancel at least 24 hours prior to expiration.</li>
+                    <li><strong>Automatic Renewal:</strong> All monthly and yearly subscriptions automatically renew at the current price until cancelled. One-time Lifetime purchases do not renew.</li>
+                </ul>
+            </div>
+
+            <h2>3. How to Cancel Subscriptions</h2>
+            <p>Subscriptions **cannot** be cancelled directly inside the Sprachly app (as transactions are processed directly by the app stores to ensure security). To cancel or manage your subscriptions:</p>
+            
+            <p><strong>On Android (Google Play):</strong></p>
+            <ol>
+                <li>Open the <strong>Google Play Store</strong> app on your Android device.</li>
+                <li>Tap your profile icon in the top-right corner.</li>
+                <li>Tap <strong>Payments & Subscriptions</strong>, then select <strong>Subscriptions</strong>.</li>
+                <li>Find <strong>Sprachly</strong> in the list, tap it, and select <strong>Cancel Subscription</strong>.</li>
+                <li>Follow the on-screen instructions to confirm.</li>
+            </ol>
+
+            <p><strong>On iOS (Apple App Store):</strong></p>
+            <ol>
+                <li>Open the <strong>Settings</strong> app on your Apple device.</li>
+                <li>Tap your Apple ID / Name at the top of the menu.</li>
+                <li>Tap <strong>Subscriptions</strong>.</li>
+                <li>Select <strong>Sprachly</strong> and tap <strong>Cancel Subscription</strong>.</li>
+            </ol>
+
+            <h2>4. Acceptable Use of AI Features</h2>
+            <p>Sprachly includes experimental AI-powered modules (such as the Dialogue Simulator, AI Writing Lab, and translation tools powered by Google Gemini and Groq APIs).</p>
+            <p>You agree not to use these features to:</p>
+            <ul>
+                <li>Submit abusive, offensive, vulgar, or illegal prompts.</li>
+                <li>Attempt to reverse-engineer or manipulate the underlying API gateways.</li>
+                <li>Automate requests via external bots or scripts that flood our rate limits.</li>
+            </ul>
+
+            <h2>5. Intellectual Property</h2>
+            <p>All curriculum, German learning texts, vocabulary directories, visual mascot designs, and software systems are the exclusive intellectual property of Sprachly. You may not scrape, clone, republish, or redistribute our German learning databases without our explicit written consent.</p>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>Sprachly is provided "as is" and "as available". While our curriculum conforms to standard CEFR (A1-B2) guidelines, we do not guarantee language test passing scores or error-free AI dynamic responses. We are not liable for any data loss, connection interruptions, or device failures.</p>
+
+            <h2>7. Governing Law</h2>
+            <p>These terms are governed by and construed in accordance with the laws of your local jurisdiction, and any disputes will be resolved in courts of competent jurisdiction.</p>
+
+            <h2>8. Changes to These Terms</h2>
+            <p>We may update these terms occasionally. If we make major modifications, we will inform you via an in-app notice or alert. Using the app after an update means you agree to the new terms.</p>
+
+            <h2>9. Contact & Support</h2>
+            <p>If you have any questions, billing issues, or technical problems:</p>
+            <ul>
+                <li>Email support: <a href="mailto:support@sprachly.kushan.codes">support@sprachly.kushan.codes</a></li>
+                <li>Online Support: <a href="/support">sprachly.kushan.codes/support</a></li>
+            </ul>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Sprachly. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

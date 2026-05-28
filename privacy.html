@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Sprachly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #09090e;
+            --surface: rgba(18, 18, 29, 0.7);
+            --text: #f4f4f5;
+            --muted: #a1a1aa;
+            --accent: #8b5cf6;
+            --accent-glow: rgba(139, 92, 246, 0.15);
+            --border: rgba(255, 255, 255, 0.08);
+            --primary: #6366f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.75rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-link {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--text);
+        }
+
+        /* Headings */
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ffffff 30%, var(--muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        /* Paragraphs & Lists */
+        p, li {
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--surface);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card p {
+            margin-bottom: 0;
+            color: var(--text);
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer.site-footer {
+            margin-top: 6rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer.site-footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 2.25rem;
+            }
+            header {
+                margin-bottom: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Sprachly</a>
+            <a href="/" class="nav-link">&larr; Back to home</a>
+        </header>
+
+        <main>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Effective Date: May 28, 2026 · Last updated: May 2026</p>
+
+            <div class="card">
+                <p><strong>TL;DR:</strong> We collect only what is needed to make the app work. We do not sell your personal data. To support our free tier, we serve optional ads via Google AdMob, which collects device identifiers under strict GDPR/COPPA guidelines if you opt in. Your learning progress stays on your device unless you choose to create an account to sync it.</p>
+            </div>
+
+            <h2>1. Information We Collect</h2>
+            <p><span class="highlight">Data stored locally on your device (never sent to us):</span></p>
+            <ul>
+                <li>Learning progress (completed lessons, quiz scores)</li>
+                <li>Flashcard review history</li>
+                <li>Streak and achievement data</li>
+                <li>App preferences and local settings</li>
+            </ul>
+
+            <p><span class="highlight">Data collected when you create an account (optional):</span></p>
+            <ul>
+                <li>Email address (for login, authentication, and account recovery)</li>
+                <li>Display name (optional, to personalize your profile)</li>
+                <li>Learning level selection (A1 - C1)</li>
+            </ul>
+
+            <p><span class="highlight">Analytics and Diagnostics data (anonymous):</span></p>
+            <ul>
+                <li>App crashes and error logs (via Firebase Crashlytics)</li>
+                <li>General usage patterns (which features and tools are loaded)</li>
+                <li>Device specifications and OS versions (to monitor performance)</li>
+            </ul>
+
+            <h2>2. How We Use Your Data</h2>
+            <ul>
+                <li>To personalize and remember your learning accomplishments</li>
+                <li>To synchronize progress across your mobile devices (if signed in)</li>
+                <li>To diagnose application crashes and bug fixing</li>
+                <li>To send periodic streak notification reminders (if opted-in)</li>
+            </ul>
+            <p>We do <strong>NOT</strong> sell, trade, or share your data with unauthorized third parties for marketing purposes.</p>
+
+            <h2>3. Advertising & Tracking Consent</h2>
+            <p>Sprachly shows optional rewarded ads to allow free access to premium lessons. These ads are served by Google AdMob. Google AdMob may collect and process device identifiers (such as the Google Advertising ID or IDFA), hardware specifications, and approximate location data to serve and measure advertisements.</p>
+            <p>For users located in the EEA, UK, or Switzerland, **we ask for your explicit opt-in consent** via Google's Consent Management Platform before serving personalized ads. You can manage or withdraw your consent choice at any time within your app settings. For users under 13, personalized ads are disabled entirely by default.</p>
+
+            <h2>4. Data Storage & Security</h2>
+            <ul>
+                <li>Local progress is saved securely within your device's private app storage.</li>
+                <li>Cloud and synchronization data is stored on highly secure Google Firebase server clusters.</li>
+                <li>All network communications are secured using strict HTTPS encryption protocols.</li>
+            </ul>
+
+            <h2>5. Children's Privacy & Age Policy</h2>
+            <p>Sprachly is designed for users aged 13 and older. We do not knowingly collect personal information from children under 13. If you are under 13, you must use the app in local-only offline mode without registering an account. If we learn that we have collected personal data from a child under 13 without verifiable parental consent, we will delete that data immediately. To report a children's data issue, contact us at <a href="mailto:privacy@sprachly.kushan.codes">privacy@sprachly.kushan.codes</a>.</p>
+
+            <h2>6. Your Rights & Account Deletion</h2>
+            <p>Under GDPR and App Store guidelines, you have full control over your data. You can:</p>
+            <ul>
+                <li><strong>Delete your account</strong> — You can permanently delete your user account and erase all associated cloud and sync data from our servers. This can be done directly within the app settings via the <strong>"Delete Account"</strong> button, or by submitting a secure deletion request online at <a href="https://sprachly.kushan.codes/delete-account">sprachly.kushan.codes/delete-account</a>.</li>
+                <li><strong>Export your data</strong> — Request a download of your learning progress.</li>
+                <li><strong>Use offline only</strong> — No account registration is required to use local features.</li>
+                <li><strong>Disable analytics</strong> — Opt out of tracking under settings.</li>
+            </ul>
+
+            <h2>7. Third-Party Services</h2>
+            <p>We partner with these leading SDKs to provide core app features. Each service governs data according to their own policy guidelines:</p>
+            <ul>
+                <li><strong>Firebase Authentication</strong> — Secure user login</li>
+                <li><strong>Firebase Crashlytics & Analytics</strong> — Quality monitoring</li>
+                <li><strong>Google AdMob</strong> — Rewarded ad systems</li>
+                <li><strong>RevenueCat</strong> — In-app billing & subscriptions</li>
+            </ul>
+            <p>We encourage you to review their privacy parameters: 
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>, 
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Partner Privacy Policy</a>, and 
+                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.
+            </p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or data concerns, contact us at:</p>
+            <ul>
+                <li>Email: <a href="mailto:privacy@sprachly.kushan.codes">privacy@sprachly.kushan.codes</a></li>
+                <li>Support Portal: <a href="/support">sprachly.kushan.codes/support</a></li>
+            </ul>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Sprachly. All rights reserved.</p>
+            <p>This privacy policy is hosted at sprachly.kushan.codes.</p>
+        </footer>
+    </div>
+</body>
+</html>
